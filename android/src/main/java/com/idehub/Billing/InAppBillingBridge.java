@@ -24,6 +24,8 @@ import java.util.List;
 import java.util.Map;
 
 public class InAppBillingBridge extends ReactContextBaseJavaModule implements ActivityEventListener, BillingProcessor.IBillingHandler {
+    public static final int PURCHASE_FLOW_REQUEST_CODE = 32459;
+    
     ReactApplicationContext _reactContext;
     String LICENSE_KEY = null;
     BillingProcessor bp;
