@@ -409,11 +409,6 @@ public class InAppBillingBridge extends ReactContextBaseJavaModule implements Ac
             bp.handleActivityResult(requestCode, resultCode, intent);
     }
 
-    @Override
-    public void onNewIntent(Intent intent){
-
-    }
-
     HashMap<String, Promise> mPromiseCache = new HashMap<>();
 
     synchronized void resolvePromise(String key, Object value) {
